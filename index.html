@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Crystal Collector Game</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <div id="introduction">
+    <div id="title">
+      <h1>Welcome to the Crystal Collector!</h1>
+    </div>
+
+    <div id="instructions">
+      <p>You'll be given a random number at the start of the game.</p>
+      <p>There are four crystals. By clicking on a crystal, you'll be adding a specific amount of points to your total
+        score.</p>
+      <p>To win, you have to match your total score to the random number displayed. You lose the game if your total
+        score goes above that number.</p>
+      <p>You won't know the value of each crystal until you click on them.</p>
+      <p>The values for these crystals change at the start of each new game.</p>
+    </div>
+
+  </div>
+
+  <div id="display">
+    <div id="randomNum"></div>
+    <div id="wins-losses">
+      <p id="wins">Wins: </p>
+      <p id="losses">Losses: </p>
+    </div>
+  </div>
+
+  <div id="crystals">
+    <img id="rose" src="./assets/images/rose quartz.png" alt="">
+    <img id="alexandrite" src="./assets/images/alexandrite.png" alt="">
+    <img id="amethyst" src="./assets/images/amethyst.png" alt="">
+    <img id="opal" src="./assets/images/opal.png" alt="">
+  </div>
+
+  <div id="score">
+    <p>Your current number is: </p>
+    <p id="currentNum"></p>
+  </div>
+  <script src="./assets/javascript/game.js"></script>
+</body>
+
+</html>
